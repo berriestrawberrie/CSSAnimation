@@ -7,6 +7,7 @@ body{
     width: 100%;
     max-height: 100vh;
     height: 100%;
+    overflow-y: hidden;
 }
 
 /*HEADER:: NAV STYLING*/
@@ -61,4 +62,113 @@ nav li::before{
 }
 .dots:hover + nav{
     top: 48px;
+}
+
+/*MAIN:: BACKGROUND TOP IMAGE W/ SCROLLERBAR CONTAINERS SETUP*/
+.background__top{
+    position: absolute;
+    top: -100px;
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    z-index: -2;
+}
+.vertical__scroll{
+    display: flex;
+    background-color: #fff;
+    width: 100%;
+}
+
+.ledger , .imager, .scroller{
+    border: 1px solid;
+}
+.ledger{
+    width: 20px;
+    max-height: 380px;
+    height: 380px;
+    border-right: none;
+}
+.imager{
+    display: flex;
+    justify-content: flex-end;
+    width: 560px;
+    max-height: 380px;
+    height: 380px;
+}
+.imager img{
+    border-left: 1px solid black;
+}
+.scroller{
+    width: 20px;
+    max-height: 380px;
+    height: 380px;
+    border-left: none;
+}
+
+/*MAIN:: BACKGROUND TOP IMAGE W/ SCROLLERBAR CONTAINERS SCROLLING ICONS*/
+.horizontal__scroll{
+    display: flex;
+    width: 100%;
+}
+.horizontal__scroll span{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 100%;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+.horizontal__scroll .left-arrow{
+    margin-top: 3px;
+    margin-left: 3px;
+    font-size: 12px;
+    text-align: left;
+}
+.horizontal__scroll .right-arrow{
+    margin-top: 3px;
+    margin-right: 3px;
+    font-size: 12px;
+    text-align: right;
+}
+.box__med , .box__sm, .box__lrg{
+    height: 20px;
+    border: 1px solid black;
+    border-top: none;
+}
+.box__med{
+    width: 200px;
+}
+.box__sm{
+    width: 50px;
+    border-left: none;
+}
+.box__lrg{
+    width: 300px;
+    border-left: none;
+}
+.box-pink{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffb3d2;
+}
+/*MAIN:: BACKGROUND BOTTOM IMAGE W/ SCROLLERBAR CONTAINERS SETUP*/
+.background__bottom{
+    position: absolute;
+    top: 400px;
+    right: 0;
+    max-width: 600px;
+    width: 100%;
+    height: 400px;
+    z-index: -2;
+}
+.horizontal__banner{
+    height: 30px;
+    width: 100%;
+    border: 1px solid black;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0 ;
+    background-image: linear-gradient(90deg,#ffa8cc 30%,#ffc6dd)
 }
