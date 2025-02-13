@@ -1,2 +1,2 @@
-Screenshot: 
-![Landpage Preview](screenshot.png)
+Screenshot:
+![Landpage Preview](images/screenshot.png)

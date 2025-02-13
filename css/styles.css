@@ -55,7 +55,7 @@ h3{
     height: 50px;
     padding: 10px;
 }
-/*SVG FILE */
+/*SVG FILE YOUTUBE ICON*/
 #youtube{
     transform: scale(.7);
 }
@@ -132,7 +132,7 @@ h3{
     height: 380px;
     border-right: none;
 }
-/*SVG FILE*/
+/*SVG FILE VERTICAL LINES*/
 #ledger{
     stroke: black;
     stroke-width: 3;
@@ -387,6 +387,18 @@ input{
     animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-delay: 3s;
+}
+/*SVG FILE: MAGNIFYING GLASS */
+.magnify-circle{
+    stroke: black;
+    stroke-width: 3px;
+    fill: none;
+    
+}
+.magnify-line{
+    stroke: black;
+    stroke-linecap: round;
+    stroke-width: 3px;
 }
 
 /*CSS ANIMATION TITLE BORDER */
